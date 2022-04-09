@@ -1,0 +1,28 @@
+{
+  "name": "ton3-providers",
+  "version": "0.0.3",
+  "description": "ton3 blockchain providers",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "npm run typegen && tsc -p tsconfig.build.json",
+    "typegen": "typegen -t ../../transform.js.clean ./src/openapi/json-rpc-v2.json > ./src/types/client.json-rpc-v2.d.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonstack/ton3-providers.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tonstack/ton3-providers/issues"
+  },
+  "homepage": "https://github.com/tonstack/ton3-providers#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "openapi-client-axios": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "openapi-client-axios-typegen": "^5.0.2"
+  }
+}
