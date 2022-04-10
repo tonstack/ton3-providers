@@ -14,11 +14,11 @@ npm i ton3-providers
 ## Simple usage
 ```typescript
 import { Mnemonic, Address, Coins, Builder, BOC } from 'ton3-core'
-import { ProviderJSONRPCV2 } from 'ton3-providers'
+import { ProviderRESTV2 } from 'ton3-providers'
 import { Wallets } from 'ton3-contracts'
 
 const highloadWalletExample = async () => {
-    const provider = new ProviderJSONRPCV2('https://testnet.toncenter.com/api/v2')
+    const provider = new ProviderRESTV2('https://testnet.toncenter.com/api/v2')
     const client = await provider.client()
 
     const mnemonic = new Mnemonic()

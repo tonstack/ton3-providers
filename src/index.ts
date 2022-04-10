@@ -1,3 +1,3 @@
-import { ProviderJSONRPCV2 } from './clients/jsonrpc'
+import { ProviderRESTV2 } from './clients/rest-v2'
 
-export { ProviderJSONRPCV2 }
+export { ProviderRESTV2 }
