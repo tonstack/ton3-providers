@@ -6,7 +6,7 @@ import { Client as ClientRESTV2 } from '../types/client.rest-v2'
 import DefinitionRESTV2 from '../openapi/rest-v2.json'
 
 interface ProviderRESTV2Options {
-    apiKey: string
+    apiKey?: string
 }
 
 class ProviderRESTV2 {
@@ -34,4 +34,7 @@ class ProviderRESTV2 {
     }
 }
 
-export { ProviderRESTV2 }
+export {
+    ProviderRESTV2,
+    ClientRESTV2
+}
