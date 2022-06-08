@@ -1,3 +1,1 @@
-import { ProviderRESTV2 } from './clients/rest-v2'
-
-export { ProviderRESTV2 }
+export { ProviderRESTV2, ClientRESTV2 } from './clients/rest-v2'
